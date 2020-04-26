@@ -48,7 +48,7 @@ killaura:
       # 0: It can detect many types of KillAura, but there are many false alarms. It is generally not recommended to use it
       # 1: Medium sensitivity, with a small number of false positives, it can detect most types of killaura
       # 2: The most lenient mode can detect most types of killaura, but it is slow
-      sensitivity: 2
+      sensitivity: 1
 
     # KillAura NPC check, it will generate a fake player behind the player to detect
     # if the player is using KillAura, and don't worry, the player can only see his own NPC
@@ -174,10 +174,10 @@ killaura:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    8: 'matrix npc %player% 100'
-    30: 'matrix notify %player% might be using combat hacks (KillAura)'
-    55: 'matrix notify %player% is using combat hacks (KillAura) #2'
-    70:
+    4: 'matrix npc %player% 100'
+    20: 'matrix notify %player% might be using combat hacks (KillAura)'
+    45: 'matrix notify %player% is using combat hacks (KillAura) #2'
+    60:
       - ban %player% -s 30d Unfair Advantage
       - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
@@ -292,7 +292,7 @@ fly:
   enable: true
 
   # Violations needed to cancel illegal movements (-1 = never cancel)
-  cancel_vl: 50
+  cancel_vl: -1
 
   # Fly ability check
   # It might be not compatible with some plugins, test it by yourself
@@ -369,7 +369,7 @@ badpackets:
   commands:
     100: 'matrix notify %player% is sending unusual packets to server (BadPackets) #1'
     150: 'matrix notify %player% is sending unusual packets to server (BadPackets) #2'
-    240: 'kick %player% -s &3Anticheat>&f Sending Unusual Packets'
+    240: 'ban %player% 1d -s &3Anticheat>&f Sending Unusual Packets -- Cheating Suspected, Contact staff for investigation'
 
 ## FastUse
 # Check prevents player from eating or using an item too quickly.
@@ -542,6 +542,7 @@ jesus:
 # Also prevents quick inventory movement hacks.
 inventory:
   # Enable this check?
+  #-- Still cause false positive --#
   enable: true
 
   # Violations needed to cancel illegal movements of items (-1 = never cancel)
@@ -563,14 +564,14 @@ inventory:
   disable_invmove: false
 
   # Check AutoTotem cheat?
-  auto_totem: true
+  auto_totem: false
 
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    10: 'matrix notify %player% moved items in inventory too quickly (ChestSteal)'
-    24: 'matrix notify %player% moved items in inventory too quickly (Cheststeal) #2'
-    50:
+    20: 'matrix notify %player% moved items in inventory too quickly (ChestSteal)'
+    44: 'matrix notify %player% moved items in inventory too quickly (Cheststeal) #2'
+    90:
       - ban %player% -s 15d Blacklisted Modification
       - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
@@ -610,9 +611,9 @@ velocity:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    10: 'matrix notify %player% tried to ignore server velocity (Velocity)'
+    5: 'matrix notify %player% tried to ignore server velocity (Velocity)'
     25: 'matrix notify %player% tried to ignore server velocity (Velocity) #2'
-    42:
+    32:
       - ban %player% -s 30d Unfair Advantage
       - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
@@ -708,6 +709,11 @@ phase:
     28: 'matrix notify %player% is phase into block (Phase) #4'
     35: 'matrix notify %player% is phase into block (Phase) #5'
     42: 'matrix notify %player% is phase into block (Phase) #6'
+    49: 'matrix notify %player% is phase into block (Phase) #7'
+    56: 'matrix notify %player% is phase into block (Phase) #8'
+    63: 'matrix notify %player% is phase into block (Phase) #9'
+    70: 'matrix notify %player% is phase into block (Phase) #10'
+    77: 'matrix notify %player% is phase into block (Phase) #11'
     # No kick action; the check is not stable yet.
 
 ## AutoBot
