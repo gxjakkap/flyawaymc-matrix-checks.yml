@@ -178,11 +178,11 @@ killaura:
     20: 'matrix notify %player% might be using combat hacks (KillAura)'
     45: 'matrix notify %player% is using combat hacks (KillAura) #2'
     60:
-      - ban %player% -s 30d Unfair Advantage
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 30d Unfair Advantage
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Unfair Advantage!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 ## HitBox
 # Description: This check prevents players from using HitBox, Angle, Reach hacks.
@@ -235,11 +235,11 @@ hitbox:
     10: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox)'
     15: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox) #2'
     36:
-      - ban %player% -s 30d Unfair Advantage
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 30d Unfair Advantage
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Unfair Advantage!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 ## Movement Speed Check
 # This checks how fast a player moves, and prevents the player from moving too fast.
@@ -278,11 +278,11 @@ speed:
     55: 'matrix notify %player% tried to move faster than usual (Speed) #1'
     90: 'matrix notify %player% tried to move faster than usual (Speed) #2'
     220:
-      - ban %player% -s 30d Unfair Advantage
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 30d Unfair Advantage
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Unfair Advantage!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 ## Fly
 # Prevents the player from using both vanilla and non-vanilla fly hacks.
@@ -333,11 +333,11 @@ fly:
     50: 'matrix notify %player% tried to fly (Fly) #1'
     100: 'matrix notify %player% tried to fly (Fly) #2'
     180:
-      - ban %player% -s 30d Unfair Advantage
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 30d Unfair Advantage
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Unfair Advantage!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 
 ## BadPackets
@@ -369,7 +369,7 @@ badpackets:
   commands:
     100: 'matrix notify %player% is sending unusual packets to server (BadPackets) #1'
     150: 'matrix notify %player% is sending unusual packets to server (BadPackets) #2'
-    240: 'ban %player% 1d -s &3Anticheat>&f Sending Unusual Packets -- Cheating Suspected, Contact staff for investigation'
+    240: 'ipban %player% 1d -s &3Anticheat>&f Sending Unusual Packets -- Cheating Suspected, Contact staff for investigation'
 
 ## FastUse
 # Check prevents player from eating or using an item too quickly.
@@ -407,11 +407,11 @@ fastbow:
   commands:
     5: 'matrix notify %player% is trying to shoot a bow too quickly (FastBow)'
     55:
-      - ban %player% -s 15d Blacklisted Modification
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 15d Blacklisted Modification
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Blacklisted Modification!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 ## FastHeal
 # Check prevents player from regaining health too quickly.
@@ -429,11 +429,11 @@ fastheal:
   commands:
     10: 'matrix notify %player% tried to regain health too quickly (FastHeal)'
     72:
-      - ban %player% -s 15d Blacklisted Modification
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 15d Blacklisted Modification
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Blacklisted Modification!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 ## Block
 # Check prevents the player from breaking, placing block quickly
@@ -471,11 +471,11 @@ block:
   commands:
     10: 'matrix notify %player% tried to place/break a block too quickly (FastPlace/FastBreak)'
     32:
-      - ban %player% -s 15d Blacklisted Modification
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 15d Blacklisted Modification
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Blacklisted Modification!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 ## Scaffold check
 # Check prevents player bridging blocks or towering up faster than normal speed
@@ -509,11 +509,11 @@ scaffold:
     7: 'matrix notify %player% tried to bridge blocks quickly (Scaffold)'
     15: 'matrix notify %player% tried to bridge blocks quickly (Scaffold) #2'
     42:
-      - ban %player% -s 15d Blacklisted Modification
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 15d Blacklisted Modification
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Blacklisted Modification!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 ## Jesus
 # Check prevents the player from moving too too quickly in liquids, or walking on liquid.
@@ -531,11 +531,11 @@ jesus:
     20: 'matrix notify %player% tried to move illegally in liquid (Jesus)'
     40: 'matrix notify %player% tried to move illegally in liquid (Jesus) #2'
     72:
-      - ban %player% 30d Jesus Christ
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% 30d Jesus Christ
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Jesus Christ!","bold":true,"color":"yellow"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 ## Inventory
 # Check prevents the player from using illegal inventory modifications such as Steal.
@@ -572,11 +572,11 @@ inventory:
     20: 'matrix notify %player% moved items in inventory too quickly (ChestSteal)'
     44: 'matrix notify %player% moved items in inventory too quickly (Cheststeal) #2'
     90:
-      - ban %player% -s 15d Blacklisted Modification
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 15d Blacklisted Modification
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Blacklisted Modification!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
     
 
 ## Velocity
@@ -614,11 +614,11 @@ velocity:
     5: 'matrix notify %player% tried to ignore server velocity (Velocity)'
     25: 'matrix notify %player% tried to ignore server velocity (Velocity) #2'
     32:
-      - ban %player% -s 30d Unfair Advantage
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 30d Unfair Advantage
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Unfair Advantage!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 
 ## Spam
@@ -666,11 +666,11 @@ interact:
     10: 'matrix notify %player% tried to illegally interact with Entity/Block (Interact)'
     24: 'matrix notify %player% tried to illegally interact with Entity/Block (Interact) #2'
     48:
-      - ban %player% -s 15d Blacklisted Modification
-      - tellraw @a ["",{"text":"---------------------------------------------","color":"white"}]
+      - ipban %player% -s 15d Blacklisted Modification
+      - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"%player% ","bold":true,"color":"red"},{"text":"has been banned by ","color":"gray"},{"text":"E","bold":true,"color":"white"},{"text":"c","bold":true,"color":"dark_aqua"},{"text":"l","bold":true,"color":"white"},{"text":"a","bold":true,"color":"dark_aqua"},{"text":"i","bold":true,"color":"white"},{"text":"r","bold":true,"color":"dark_aqua"}]
       - tellraw @a ["",{"text":"for ","color":"gray"},{"text":"Blacklisted Modification!","bold":true,"color":"dark_red"}]
-      - tellraw @a ["",{"text":"----------------------------------------------","color":"white"}]
+      - tellraw @a ["",{"text":"  ","color":"white"}]
 
 ## AutoFish
 # Check prevents the player from using an Auto-Fishing mod or hack.
