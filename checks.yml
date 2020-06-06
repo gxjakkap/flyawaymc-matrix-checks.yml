@@ -178,7 +178,7 @@ killaura:
     20: 'matrix notify %player% might be using combat hacks (KillAura)'
     45: 'matrix notify %player% is using combat hacks (KillAura) #2'
     60:
-      - ipban %player% -s 30d &7[&6&lChoux&e&lCream&7] Unfair Advantage. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 30d &7[&6&lChoux&e&lCream&7] &c&lUnfair Advantage. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Unfair Advantage!","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -234,7 +234,7 @@ hitbox:
     10: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox)'
     15: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox) #2'
     36:
-      - ipban %player% -s 30d &7[&6&lChoux&e&lCream&7] Unfair Advantage. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 30d &7[&6&lChoux&e&lCream&7] &c&lUnfair Advantage. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Unfair Advantage!","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -276,7 +276,7 @@ speed:
     55: 'matrix notify %player% tried to move faster than usual (Speed) #1'
     90: 'matrix notify %player% tried to move faster than usual (Speed) #2'
     220:
-      - ipban %player% -s 30d &7[&6&lChoux&e&lCream&7] Unfair Advantage. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 30d &7[&6&lChoux&e&lCream&7] &c&lUnfair Advantage. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Unfair Advantage!","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -330,7 +330,7 @@ fly:
     50: 'matrix notify %player% tried to fly (Fly) #1'
     100: 'matrix notify %player% tried to fly (Fly) #2'
     180:
-      - ipban %player% -s 30d &7[&6&lChoux&e&lCream&7] Unfair Advantage. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 30d &7[&6&lChoux&e&lCream&7] &c&lUnfair Advantage. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Unfair Advantage!","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -403,7 +403,7 @@ fastbow:
   commands:
     5: 'matrix notify %player% is trying to shoot a bow too quickly (FastBow)'
     55:
-      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] Blacklisted Modification. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] &c&lBlacklisted Modification. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Blacklisted Modifications!","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -424,7 +424,7 @@ fastheal:
   commands:
     10: 'matrix notify %player% tried to regain health too quickly (FastHeal)'
     72:
-      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] Blacklisted Modification. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] &c&lBlacklisted Modification. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - /tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Blacklisted Modifications!","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -465,7 +465,7 @@ block:
   commands:
     10: 'matrix notify %player% tried to place/break a block too quickly (FastPlace/FastBreak)'
     32:
-      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] Blacklisted Modification. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] &c&lBlacklisted Modification. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - /tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Blacklisted Modifications","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -502,7 +502,7 @@ scaffold:
     7: 'matrix notify %player% tried to bridge blocks quickly (Scaffold)'
     15: 'matrix notify %player% tried to bridge blocks quickly (Scaffold) #2'
     42:
-      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] Blacklisted Modification. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] &c&lBlacklisted Modification. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Blacklisted Modifications!","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -523,7 +523,7 @@ jesus:
     20: 'matrix notify %player% tried to move illegally in liquid (Jesus)'
     40: 'matrix notify %player% tried to move illegally in liquid (Jesus) #2'
     72:
-      - ipban %player% 30d -s &7[&6&lChoux&e&lCream&7] Unfair Advantage. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% 30d -s &7[&6&lChoux&e&lCream&7] &c&lUnfair Advantage. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" jesus......","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -563,7 +563,7 @@ inventory:
     20: 'matrix notify %player% moved items in inventory too quickly (ChestSteal)'
     44: 'matrix notify %player% moved items in inventory too quickly (Cheststeal) #2'
     90:
-      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] Blacklisted Modification. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] &c&lBlacklisted Modification. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Blacklisted Modifications!","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -604,7 +604,7 @@ velocity:
     5: 'matrix notify %player% tried to ignore server velocity (Velocity)'
     25: 'matrix notify %player% tried to ignore server velocity (Velocity) #2'
     32:
-      - ipban %player% -s 30d &7[&6&lChoux&e&lCream&7] Unfair Advantage. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 30d &7[&6&lChoux&e&lCream&7] &c&lUnfair Advantage. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Unfair Advantage!","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
@@ -655,7 +655,7 @@ interact:
     10: 'matrix notify %player% tried to illegally interact with Entity/Block (Interact)'
     24: 'matrix notify %player% tried to illegally interact with Entity/Block (Interact) #2'
     48:
-      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] Blacklisted Modification. visit http://chouxcream.playflyaway.cc/ for more info
+      - ipban %player% -s 15d &7[&6&lChoux&e&lCream&7] &c&lBlacklisted Modification. &fvisit http://chouxcream.playflyaway.cc/ for more info
       - tellraw @a ["",{"text":"  ","color":"white"}]
       - tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Choux","bold":true,"color":"gold"},{"text":"Cream","bold":true,"color":"yellow"},{"text":"]","color":"dark_gray"},{"text":" %player%","color":"dark_red"},{"text":" has been banned for","color":"gold"},{"text":" Blacklisted Modifications!","color":"red"}]
       - tellraw @a ["",{"text":"  ","color":"white"}]
